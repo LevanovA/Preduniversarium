@@ -1,8 +1,30 @@
-'use strick'
+$(document).ready(function(){
+    'use strict'
 
-$('.button--modal-open').on('click', function () {
-    console.log('click')
-})
+    //Прокрутка до блока с указанным id в ссылке
+    $('.anchor').on('click', function (event) {
+        event.preventDefault();
+        var href = $(this).attr('href');
+        if ($(href).length) {
+            $("html, body").animate({
+                scrollTop: $(href).offset().top + "px"
+            }, {
+                duration: 500,
+                easing: "swing"
+            });
+        }
+    })
+});
+
+'use strict';
+
+$(document).ready(function(){
+
+    $('.burger').on('click', function(){
+        $(this).toggleClass('burger--active')
+        $('.menu__mobile').slideToggle(400)
+    });
+});
 
 'use strict';
 

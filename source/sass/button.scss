@@ -1,5 +1,7 @@
 .button {
-    @include flex-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 250px;
     height: 60px;
 
@@ -17,6 +19,13 @@
     outline: none;
     transition: 0.5s;
 
+    @include before_768 {
+        width: 240px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
     &:hover {
         color: $button-main-c;
         background-color: $button-hover-c;
@@ -30,8 +39,8 @@
     &:focus {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
     }
-}
 
-.button--modal-open {
-    margin-bottom: 30px;
+    &--center {
+        margin: 0 auto;
+    }
 }

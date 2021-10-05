@@ -1,0 +1,54 @@
+.organizers {
+    margin-bottom: 72px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 48px;
+
+        @include before_480 {
+            margin-right: 24px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 12px;
+        background-color: #ededed;
+        border-radius: 50%;
+        transition: 0.5s;
+
+        @include before_480 {
+            width: 100px;
+            height: 100px;
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__img {
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: contain;
+
+        @include before_480 {
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,37 @@
+.footer {
+    padding: 20px 0;
+    background-color: $border-main-c;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include before_768 {
+            flex-direction: column;
+        }
+    }
+
+    &__el {
+        font-family: $font-main;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        &:not(:last-child) {
+            margin-right: 24px;
+
+            @include before_768 {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

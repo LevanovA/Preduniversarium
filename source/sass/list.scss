@@ -1,0 +1,30 @@
+.list {
+    margin-bottom: 48px;
+
+    &__item {
+        position: relative;
+        padding-left: 40px;
+        font-size: 20px;
+        line-height: 30px;
+
+        @include before_768 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            background-color: $link-main-c;
+            border-radius: 50%;
+        }
+    }
+}

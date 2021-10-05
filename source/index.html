@@ -4,45 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Стартовый шаблон</title>
-    <meta name="description" content="Стартовый шаблон для созадни проектов"/>
+    <title>Предуниверсариум</title>
+    <meta name="description" content="Предуниверсариум - это образовательная программа для лучших из лучших"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(85704128, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/85704128" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFFCLZEHN5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EFFCLZEHN5');
+    </script>
 </head>
 <body>
     <div style="display: none">
         <include src="build/img/sprite_auto.svg"></include>
     </div>
     <header class="header">
-        <div class="wrapper"></div>
+            <nav class="menu">
+                <div class="wrapper">
+                    <div class="menu__flex">
+                        <div class="menu__el menu__el--logo">
+                            <img src="img/logo.png" alt="Логотип Предуниверсариума" class="menu__logo">
+                        </div>
+                        <div class="menu__el menu__el--desktop">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#why" class="menu__link anchor">Зачем тебе это</a></li>
+                                <li class="menu__item"><a href="#organizers" class="menu__link anchor">Организаторы</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Регистрация</a></li>
+                            </ul>
+                        </div>
+                        <div class="burger">
+                            <span class="burger__strip"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__mobile">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#why" class="menu__link anchor">Зачем тебе это</a></li>
+                        <li class="menu__item"><a href="#organizers" class="menu__link anchor">Организаторы</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Регистрация</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
     <section class="main">
-        <h2 class="main__title">
-            Все получилось!!! Удачного кодинга :=)) Поехали
-        </h2>
-        <div class="icon-box">
-            <svg class="icon-address" width="24" height="24">
-                <use xlink:href="#icon-address"></use>
-            </svg>
-        </div>
-        <div class="button-box">
-            <button class="button button--modal-open" type="button">Показать</button>
-        </div>
-        <div>
-            <a class="button" href="#">Продолжить</a>
-        </div>
-        <div class="slider">
-            <div class="slider-item">
-                <img src="img/img1.jpg" alt="">
+        <section class="banner">
+            <img src="img/banner2.jpg" alt="Обучение" class="banner__img">
+            <div class="banner__filter"></div>
+            <div class="banner__info">
+                <h2 class="banner__title">Предуниверсариум</h2>
+                <p class="banner__description">
+                    Подготовка к вузу - это не только ЕГЭ
+                </p>
+                <p class="banner__description banner__description--upper">
+                    Образовательная программа
+                </p>
+                <p class="banner__description">
+                    для лучших из лучших
+                </p>
+                <div class="button-box">
+                    <a href="#" class="button button--center">Участвовать</a>
+                </div>
             </div>
-            <div class="slider-item">
-                <img src="img/img2.jpg" alt="">
+        </section>
+        <section id="why" class="why">
+            <div class="wrapper">
+                <h2 class="title">
+                    Зачем тебе это
+                </h2>
+                <ul class="list">
+                    <li class="list__item">Хочешь получить пользу от обучения в вузе, а не просто получить диплом для родителей?</li>
+                    <li class="list__item">Хочешь начать строить профессиональную карьеру с первых дней в университете?</li>
+                    <li class="list__item">Хочешь правильно распределять время между учебой и личными интересами?</li>
+                    <li class="list__item">Хочешь встретится с экспертами разных научных и профессиональных сфер? </li>
+                </ul>
+                <div class="why__flex">
+                    <p class="why__text">
+                        Тогда регистрируйся
+                    </p>
+                    <svg class="icon why__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18C14.7 18 14.5 17.9 14.3 17.7C13.9 17.3 13.9 16.7 14.3 16.3L19.3 11.3C19.7 10.9 20.3 10.9 20.7 11.3C21.1 11.7 21.1 12.3 20.7 12.7L15.7 17.7C15.5 17.9 15.3 18 15 18Z"/>
+                        <path d="M20 13C19.7 13 19.5 12.9 19.3 12.7L14.3 7.7C13.9 7.3 13.9 6.7 14.3 6.3C14.7 5.9 15.3 5.9 15.7 6.3L20.7 11.3C21.1 11.7 21.1 12.3 20.7 12.7C20.5 12.9 20.3 13 20 13Z"/>
+                        <path d="M20 13H4C3.4 13 3 12.6 3 12C3 11.4 3.4 11 4 11H20C20.6 11 21 11.4 21 12C21 12.6 20.6 13 20 13Z"/>
+                    </svg>
+                    <div class="button-box">
+                        <a href="#" class="button">Участвовать</a>
+                    </div>
+                </div>
             </div>
-            <div class="slider-item">
-                <img src="img/img3.jpg" alt="">
+        </section>
+        <section id="organizers" class="organizers">
+            <div class="wrapper">
+                <h2 class="title">
+                    Программу организовывают и поддерживают:
+                </h2>
+                <ul class="organizers__list">
+                    <li class="organizers__item">
+                        <a class="organizers__link">
+                            <img src="img/rosmol-logo.png" alt="Росмолодежь" class="organizers__img">
+                        </a>
+                        <p class="organizers__name">Росмолодежь</p>
+                    </li>
+                    <li class="organizers__item">
+                        <a class="organizers__link">
+                            <img src="img/rospatriot-logo.png" alt="Роспатриот" class="organizers__img">
+                        </a>
+                        <p class="organizers__name">Роспатриот</p>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
+        <section class="contacts">
+            <div class="wrapper">
+                <h2 class="title">
+                    Контакты
+                </h2>
+                <p class="contacts__item">
+                    <span class="contacts__name">Телефон:</span> <a href="tel:+74999678670" class="contacts__text">+7 499 967-86-70</a>
+                </p>
+                <p class="contacts__item">
+                    <span class="contacts__name">E-mail:</span> <a href="mailto:info@preduniversarium.ru" class="contacts__text">info@preduniversarium.ru</a>
+                </p>
+            </div>
+        </section>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__flex">
+                <a href="#" class="footer__el">
+                    Положение о провоедении конкурса
+                </a>
+                <a href="#" class="footer__el">
+                    Политика обработки персональных данных
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>

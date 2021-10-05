@@ -1,0 +1,111 @@
+.banner {
+    position: relative;
+    padding-bottom: 36.25%;
+    max-width: 1920px;
+    margin-bottom: 48px;
+
+    @include before_1366 {
+        padding-bottom: 45%;
+    }
+
+    @include before_768 {
+        padding-bottom: 56.25%;
+    }
+
+    @include before_480 {
+        padding-bottom: 75%;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 1;
+    }
+
+    &__filter {
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    &__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 3;
+    }
+
+    &__title {
+        margin-bottom: 72px;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 104px;
+        text-align: center;
+        color: #ffffff;
+
+        @include before_1366 {
+            font-size: 56px;
+            line-height: 72px;
+            margin-bottom: 48px;
+        }
+
+        @include before_1024 {
+            font-size: 46px;
+            line-height: 65px;
+            margin-bottom: 32px;
+        }
+
+        @include before_768 {
+            font-size: 26px;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__description {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: #ffffff;
+
+        @include before_1366 {
+            font-size: 28px;
+        }
+
+        @include before_1024 {
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        @include before_1024 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &--upper {
+            text-transform: uppercase;
+        }
+
+        &:last-of-type {
+            margin-bottom: 48px;
+
+            @include before_1024 {
+                margin-bottom: 32px;
+            }
+
+            @include before_768 {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

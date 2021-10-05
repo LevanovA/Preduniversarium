@@ -1,0 +1,34 @@
+.why {
+    margin-bottom: 72px;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+
+        @include before_768 {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        margin-right: 24px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 40px;
+
+        @include before_768 {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__icon {
+        margin-right: 48px;
+
+        @include before_768 {
+            margin-right: 0;
+            transform: rotate(90deg);
+            margin-bottom: 24px;
+        }
+    }
+}

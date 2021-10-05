@@ -1,0 +1,35 @@
+.contacts {
+    margin-bottom: 72px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        width: 90px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__text {
+        font-weight: bold;
+        font-family: $font-main;
+        font-size: 20px;
+        line-height: 30px;
+        color: $link-main-c;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+
+        @include before_480 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &:hover {
+            border-bottom: 1px solid $border-main-c;
+        }
+    }
+}
